@@ -1,0 +1,121 @@
+.container
+    position absolute
+    top 50%
+    left 50%
+    width 90%
+    height 90%
+    transform translateX(-50%) translateY(-50%)
+    color white
+    background-color black
+    display flex
+    justify-content space-around
+    
+    .title
+        color white
+        font-size 60px
+        font-weight 900
+        letter-spacing -2px
+        width 100%
+        margin-bottom 20px
+        
+        h1
+            display inline-block        
+        
+    .yellow
+        color $yellow
+    
+    .table-inventory
+        width 70%
+        height 100%
+        background-color black
+        box-shadow 0 0 100px rgba(0, 0, 0, 0.1)
+        display flex
+        flex-direction column
+        justify-content flex-start
+            
+        .line
+            width 100%
+            height 50px
+            display flex
+            justify-content space-around
+            align-items center
+            text-align center
+            border-bottom solid 1px white
+            
+            .cell
+                width 20%
+                
+                a
+                    width 20px
+                    height 20px
+                    
+                    img
+                        width 20px
+                        height 20px
+                        
+            .name
+                font-weight bold
+            
+        .table-title
+            font-weight bold
+            font-size 16px
+            height 70px
+            color white
+            border-bottom solid 3px $yellow
+                            
+        .table-content
+            overflow scroll
+            
+    .add-form
+        width 20%
+        height 100%
+        display flex
+        flex-direction column
+        justify-content space-around
+        color white
+        padding-left 20px
+        
+        h2
+            color white
+            font-size 40px
+            font-weight 900
+            letter-spacing -2px
+        
+        .yellow
+            font-size 40px
+            font-weight 900
+        
+        .field
+            margin-bottom 25px
+            
+            label
+                font-weight 900
+                
+            input[type="number"]
+                margin-top 5px
+                border-bottom solid 1px $yellow
+                
+            input[type="text"]
+                margin-top 5px
+                border-bottom solid 1px $yellow
+                
+        input[type="submit"]
+            border solid 1px $yellow
+            color $yellow
+            padding 10px 20px 25px 20px
+            width 80%
+                
+        .error
+            label
+                color $red
+        
+            .error-message
+                color $red
+                margin-top 10px
+        
+        .button a
+            background-color $yellow
+            color black
+            margin-top 20px
+            padding 10px 
+            text-decoration none
